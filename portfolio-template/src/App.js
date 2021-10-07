@@ -1,23 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import { 
+  AboutSection,
+  ContactSection,
+  Footer,
+  FooterLastUpdated,
+  FooterText,
+  HomeSection, 
+  HomeText,
+  NameText,
+  ProjectsSection,
+  SectionTitle
+} from './style.js';
 
 function App() {
+
+  const your_name = 'your_name';
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HomeSection>
+          <HomeText>
+            Hello World!
+            <br/>
+            I'm <NameText>{your_name}</NameText>,
+            <br/>
+            a full-stack web developer.
+          </HomeText>
+      </HomeSection>
+      <AboutSection>
+        <SectionTitle>
+          WHOAMI
+        </SectionTitle>
+      </AboutSection>
+      <ProjectsSection>
+        <SectionTitle>
+          MY PROJECTS
+        </SectionTitle>
+      </ProjectsSection>
+      <ContactSection>
+        <SectionTitle>
+          CONTACT ME
+        </SectionTitle>
+      </ContactSection>
+      <Footer>
+        <FooterText>
+          {your_name} <FooterLastUpdated>©2015</FooterLastUpdated>
+        </FooterText>
+      </Footer>
     </div>
   );
 }
