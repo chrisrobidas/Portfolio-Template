@@ -1,5 +1,10 @@
+import { useState } from 'react';
 import { 
   AboutSection,
+  ContactForm,
+  ContactFormInput,
+  ContactFormSubmitButton,
+  ContactFormTextArea,
   ContactSection,
   Footer,
   FooterLastUpdated,
@@ -7,6 +12,7 @@ import {
   HomeSection, 
   HomeText,
   NameText,
+  Portfolio,
   ProjectsSection,
   SectionTitle
 } from './style.js';
@@ -14,9 +20,21 @@ import {
 function App() {
 
   const your_name = 'your_name';
+  const your_email = 'christopher.robidas@outlook.com';
+
+  const [formSubject, setFormSubject] = useState();
+  const [formMessage, setFormMessage] = useState();
+
+  const handleFormSubjectChange = (event) => {
+    setFormSubject(event.target.value);
+  };
+
+  const handleFormMessageChange = (event) => {
+    setFormMessage(event.target.value);
+  };
 
   return (
-    <div>
+    <Portfolio>
       <HomeSection>
           <HomeText>
             Hello World!
@@ -40,13 +58,20 @@ function App() {
         <SectionTitle>
           CONTACT ME
         </SectionTitle>
+        <ContactForm action={`mailto:${your_email}?subject=${formSubject}&body=${formMessage}`} method="get" enctype="text/plain">
+          <ContactFormInput type="text" id="subject" name="subject" placeholder="Subject" value={formSubject} onChange={handleFormSubjectChange} required/>
+          <ContactFormTextArea id="message" name="message" placeholder="Message" value={formMessage} onChange={handleFormMessageChange} required/>
+          <ContactFormSubmitButton type="submit" id="submit-button">
+            SUBMIT
+          </ContactFormSubmitButton>
+        </ContactForm>
       </ContactSection>
       <Footer>
         <FooterText>
           {your_name} <FooterLastUpdated>©2015</FooterLastUpdated>
         </FooterText>
       </Footer>
-    </div>
+    </Portfolio>
   );
 }
 
