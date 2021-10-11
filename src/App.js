@@ -20,7 +20,7 @@ import {
 function App() {
 
   const your_name = 'your_name';
-  const your_email = 'christopher.robidas@outlook.com';
+  const your_email = 'your_email';
 
   const [formSubject, setFormSubject] = useState();
   const [formMessage, setFormMessage] = useState();
