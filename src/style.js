@@ -23,7 +23,6 @@ export const ContactForm = styled.form`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 900px;
 `;
 
 export const ContactFormSubmitButton = styled.button`
@@ -32,6 +31,7 @@ export const ContactFormSubmitButton = styled.button`
     color: #91FE3C;
     font-size: 20px;
     font-weight: bold;
+    margin: 5px;
     padding: 10px 20px;
     transition: all 0.5s linear;
     width: 200px;
@@ -47,6 +47,7 @@ export const ContactSection = styled.section`
     align-items: center;
     background-color: #1D1D1D;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 50px 0px;
 `;
@@ -200,7 +201,7 @@ export const Portfolio = styled.div`
 
 export const Project = styled.div`
     background-color: #FFFFFF;
-    border: 3px solid #0DCAF0;
+    border: none;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -244,6 +245,24 @@ export const ProjectTitle = styled.h2`
 export const ProjectVideo = styled.iframe`
     align-self: flex-end;
     width: 100%;
+`;
+
+export const ResumeButton = styled.button`
+    background: transparent;
+    border: 2px solid #91FE3C;
+    color: #91FE3C;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 10px 20px;
+    transition: all 0.5s linear;
+    width: 200px;
+
+    &:hover {
+        background: #91FE3C;
+        color: #0D0D0D;
+        cursor: pointer;
+    }
 `;
 
 export const RightAboutSectionPart = styled.div`

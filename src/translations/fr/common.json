@@ -6,7 +6,8 @@
         "my-interests": "Je m'intéresse aux jeux vidéo, à la synthèse d'images, au front-end, à la cybersécurité, à l'IA et à l'apprentissage automatique."
     },
     "contact": {
-        "contact-me": "ME CONTACTER"
+        "contact-me": "ME CONTACTER",
+        "see-resume": "VOIR CV"
     },
     "home": {
         "hello-world": "Hello World!",

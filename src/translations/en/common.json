@@ -6,7 +6,8 @@
         "my-interests": "I'm interested in Video Games, Image Synthesis, Front-end, Cyber Security, AI and Machine Learning."
     },
     "contact": {
-        "contact-me": "CONTACT ME"
+        "contact-me": "CONTACT ME",
+        "see-resume": "SEE RESUME"
     },
     "home": {
         "hello-world": "Hello World!",

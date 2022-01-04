@@ -33,6 +33,7 @@ import {
   ProjectsSection,
   ProjectTitle,
   ProjectVideo,
+  ResumeButton,
   RightAboutSectionPart,
   SectionText,
   SectionTitle,
@@ -92,7 +93,8 @@ function App() {
   const {t, i18n} = useTranslation('common');
 
   useEffect(() => {
-    Aos.init({ duration: 2000 })
+    Aos.init({ duration: 2000 });
+    i18n.changeLanguage('en');
   }, []);
 
   return (
@@ -272,6 +274,9 @@ function App() {
             {t('contact.contact-me')}
           </ContactFormSubmitButton>
         </ContactForm>
+        <ResumeButton type="submit" onClick={() => window.open(i18n.language === 'fr' ? 'Christopher_Robidas_CV_2021_fr.pdf' : 'Christopher_Robidas_CV_2021_en.pdf')} data-aos="fade-up">
+          {t('contact.see-resume')}
+        </ResumeButton>
       </ContactSection>
       <Footer>
         <Socials>
