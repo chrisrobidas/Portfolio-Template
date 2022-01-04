@@ -18,14 +18,7 @@ export const ChangeLanguageButtons = styled.div`
     z-index: 1;
 `;
 
-export const ContactForm = styled.form`
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-`;
-
-export const ContactFormSubmitButton = styled.button`
+export const ContactButton = styled.button`
     background: transparent;
     border: 2px solid #91FE3C;
     color: #91FE3C;

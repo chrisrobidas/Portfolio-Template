@@ -8,8 +8,7 @@ import { useTranslation } from "react-i18next";
 import {
   AboutSection,
   ChangeLanguageButtons,
-  ContactForm,
-  ContactFormSubmitButton,
+  ContactButton,
   ContactSection,
   CustomProgressBar,
   EnglishButton,
@@ -269,11 +268,9 @@ function App() {
         </ThisProjectText>
       </ProjectsSection>
       <ContactSection>
-        <ContactForm action={`mailto:${yourEmail}`} method="get" enctype="text/plain" data-aos="fade-up">
-          <ContactFormSubmitButton type="submit">
-            {t('contact.contact-me')}
-          </ContactFormSubmitButton>
-        </ContactForm>
+        <ContactButton onClick={() => window.location = "mailto:" + yourEmail} data-aos="fade-up">
+          {t('contact.contact-me')}
+        </ContactButton>
         <ResumeButton type="submit" onClick={() => window.open(i18n.language === 'fr' ? 'Christopher_Robidas_CV_2021_fr.pdf' : 'Christopher_Robidas_CV_2021_en.pdf')} data-aos="fade-up">
           {t('contact.see-resume')}
         </ResumeButton>
