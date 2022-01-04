@@ -1,0 +1,69 @@
+{
+    "about": {
+        "whoami": "WHOAMI",
+        "my-name-is": "My name is",
+        "my-description": "and I'm a developer seeking for new challenges. I'm a student in Computer Science from Université de Sherbrooke. I will graduate at the end of April 2022.",
+        "my-interests": "I'm interested in Video Games, Image Synthesis, Front-end, Cyber Security, AI and Machine Learning."
+    },
+    "contact": {
+        "contact-me": "CONTACT ME"
+    },
+    "home": {
+        "hello-world": "Hello World!",
+        "im": "I'm",
+        "developer": "a developer." 
+    },
+    "places-worked": {
+        "places-ive-worked": "PLACES I'VE WORKED",
+        "genetec": {
+            "name": "Genetec",
+            "header": "Software developer (internship) | Sherbrooke | Summer 2021",
+            "task1": "Develop and maintain plugins to integrate smart locks and keys into Genetec's Security Center application so that they can configure access controls and monitor their activities using the company's partner API.",
+            "task2": "Plugins made with C#, .NET 4.8 and SQL Server.",
+            "task3": "Development done as a team (Agile/Kanban)."
+        },
+        "novom": {
+            "name": "Novom Interactive",
+            "header": "Product development (internship) | Magog | Fall 2020",
+            "task1": "Develop and maintain a web application to organize online conference and talk with others by webcam or chat.",
+            "task2": "Web application made with Javascript (React, NodeJS) and AWS.",
+            "task3": "Development done as a team (Agile/SCRUM)."
+        },
+        "cvc": {
+            "name": "Clinique Vétérinaire de Coaticook",
+            "header": "C# programmer (internship) | Coaticook | Winter 2020",
+            "task1": "Design, develop and deploy software to plan veterinary preventive medicine visits on farms and centralize information and avoid loss.",
+            "task2": "Software made with C#, .NET 4.7.2 and SQL Server.",
+            "task3": "Development done alone."
+        },
+        "nba": {
+            "name": "NB Automation",
+            "header": "C# programmer | Granby | Summer 2019",
+            "task1": "Develop and maintain quality control software that allows users to verify criteria of their choice on manufactured products.",
+            "task2": "Software made with C#, .NET 4.7.2 and SQL Server.",
+            "task3": "Development done as a team."
+        },
+        "corde": {
+            "name": "Cordé Électrique",
+            "header": "C# programmer (internship) | Valcourt | Spring 2019",
+            "task1": "Develop and maintain software that helps employees make welds and a mobile application using a scanner to manage inventory.",
+            "task2": "Softwares made with C#, .NET 4.7.2, Xamarin and SQL Server.",
+            "task3": "Development done alone."
+        },
+        "challenger": {
+            "name": "National Bank Challenger",
+            "header": "IT Technician | Granby | Summer 2017 and Summer 2018",
+            "task1": "Install printers, IP phones, routers, switches, network cables and other equipment on the tennis tournament site and in trailers for volunteers and representatives of Tennis Canada.",
+            "task2": "Prepare advertising montages with Photoshop for display on a giant screen and maintain a website on WordPress to display match results and upcoming matches.",
+            "task3": "Technical support."
+        }
+    },
+    "projects": {
+        "my-projects": "MY PROJECTS",
+        "purrfect-escape-description": "In Purrfect Escape, we take on the role of a cat who is eager to go outside in order to satisfy his hunting instincts. However, this one is a prisoner of his house and his humans will not let him out. Can he find a way to escape? Made with Unity.",
+        "worfo-description": "World of Rune Fantasy Online is an open world MMORPG game. Go on an adventure alone or with friends. Quest, fight, explore, improve your skills. Play your way and shape your destiny! Made with Unity.",
+        "chalet-description": "Chalet level design. Made with Unity.",
+        "centre-description": "The Centre d'Entraide La Boussole is a help center for drug addicts, battered men and couples. Made with PHP, Laravel and MySQL.",
+        "this-project": "And finally, this website is a project I made myself with React."
+    }
+}

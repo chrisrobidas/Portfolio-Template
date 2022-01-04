@@ -1,25 +1,29 @@
 import styled from 'styled-components';
+import ProgressBar from 'react-bootstrap/ProgressBar';
 
 export const AboutSection = styled.section`
+    align-items: center;
     background-color: #FFFFFF;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+`;
+
+export const ChangeLanguageButtons = styled.div`
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #000000;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
 `;
 
 export const ContactForm = styled.form`
+    align-items: center;
     display: flex;
     flex-direction: column;
-    width: 50%;
-`;
-
-export const ContactFormInput = styled.input`
-    border: none;
-    font-size: 20px;
-    margin: 20px;
-    padding: 20px;
-
-    &:focus {
-        outline: none;
-    }
+    justify-content: center;
+    width: 900px;
 `;
 
 export const ContactFormSubmitButton = styled.button`
@@ -27,7 +31,7 @@ export const ContactFormSubmitButton = styled.button`
     border: 2px solid #91FE3C;
     color: #91FE3C;
     font-size: 20px;
-    margin: 20px 20px 20px auto;
+    font-weight: bold;
     padding: 10px 20px;
     transition: all 0.5s linear;
     width: 200px;
@@ -39,39 +43,84 @@ export const ContactFormSubmitButton = styled.button`
     }
 `;
 
-export const ContactFormTextArea = styled.textarea`
-    border: none;
-    font-size: 20px;
-    height: 200px;
-    margin: 20px;
-    padding: 20px;
+export const ContactSection = styled.section`
+    align-items: center;
+    background-color: #1D1D1D;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+`;
 
-    &:focus {
-        outline: none;
+export const CustomProgressBar = styled(ProgressBar)`
+    border-radius: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    width: 400px;
+
+    @media (max-width: 670px) {
+        width: 100%;
     }
 `;
 
-export const ContactSection = styled.section`
-    background-color: #1D1D1D;
-    height: 100vh;
+export const EnglishButton = styled.button`
+    background-color: #E31B6D;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 15px;
+
+    ${({ active }) => active && `
+        background: #720D37;
+    `}
 `;
 
 export const Footer = styled.footer`
     align-items: center;
     background-color: #0D0D0D;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 50px 0px;
 `;
 
-export const FooterLastUpdated = styled.p`
+export const FooterLastUpdated = styled.div`
     color: #91FE3C;
     display: inline;
 `;
 
-export const FooterText = styled.p`
+export const FooterText = styled.div`
     color: #999999;
     flex: 0 0 auto;
+`;
+
+export const FrenchButton = styled.button`
+    background-color: #E31B6D;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 15px;
+
+    ${({ active }) => active && `
+        background: #720D37;
+    `}
+`;
+
+export const GitHubLogo = styled.img`
+    background-color: #FFFFFF;
+    height: 50px;
+    padding: 5px;
+    transition: all 0.5s linear;
+    width: 50px;
+
+    &:hover {
+        background: #91FE3C;
+        cursor: pointer;
+    }
 `;
 
 export const HomeSection = styled.section`
@@ -82,30 +131,226 @@ export const HomeSection = styled.section`
     justify-content: center;
 `;
 
-export const HomeText = styled.p`
+export const HomeText = styled.div`
+    background-color: #00000060;
+    border-radius: 50px;
     color: #FFFFFF;
     flex: 0 0 auto;
-    font-size: 60px;
+    font-size: 70px;
     font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    width: 1000px;
+    z-index: 1;
+
+    @media (max-width: 1000px) {
+        font-size: 6.7vw;
+        width: 95%;
+    }
 `;
 
-export const NameText = styled.p`
+export const LeftAboutSectionPart = styled.div`
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+`;
+
+export const LinkedinLogo = styled.img`
+    background-color: #FFFFFF;
+    height: 50px;
+    margin-right: 10px;
+    padding: 5px;
+    transition: all 0.5s linear;
+    width: 50px;
+
+    &:hover {
+        background: #91FE3C;
+        cursor: pointer;
+    }
+`;
+
+export const NameText = styled.div`
     color: #91FE3C;
     display: inline;
+`;
+
+export const PlacesIWorkedContainer = styled.div`
+    align-items: center;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 40px);
+    max-width: 1200px;
+`;
+
+export const PlacesIWorkedSection = styled.div`
+    align-items: center;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0px;
 `;
 
 export const Portfolio = styled.div`
 `;
 
+export const Project = styled.div`
+    background-color: #FFFFFF;
+    border: 3px solid #0DCAF0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 625px;
+`;
+
+export const ProjectDescription = styled.p`
+    color: #626262;
+    font-size: 20px;
+`;
+
+export const ProjectImage = styled.img`
+    width: 100%;
+`;
+
+export const Projects = styled.div`
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+`;
+
 export const ProjectsSection = styled.section`
-    background-color: #AAAAAA;
-    height: 100vh;
+    align-items: center;
+    background-color: #E6E6E6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0px;
+`;
+
+export const ProjectTitle = styled.h2`
+    color: #626262;
+`;
+
+export const ProjectVideo = styled.iframe`
+    align-self: flex-end;
+    width: 100%;
+`;
+
+export const RightAboutSectionPart = styled.div`
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    width: 600px;
+`;
+
+export const SectionText = styled.p`
+    color: #626262;
+    font-size: 20px;
+    padding: 0px 30px;
 `;
 
 export const SectionTitle = styled.h1`
     color: #E31B6D;
     font-size: 50px;
     font-weight: bold;
-    margin: 0px;
-    padding: 20px;
+    margin: 20px;
+`;
+
+export const Skill = styled.div`
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+`;
+
+export const SkillName = styled.div`
+    align-items: center;
+    background-color: #01A1A7;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    min-width: 180px;
+`;
+
+export const Socials = styled.div`
+    margin-bottom: 30px;
+`;
+
+export const SplittedAboutSection = styled.section`
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+`;
+
+export const ThisProjectText = styled.p`
+    color: #626262;
+    font-size: 20px;
+    font-weight: bold;
+    margin 20px;
+`;
+
+export const WorkPlaceButton = styled.button`
+    background: #1D1D1D;
+    border: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    height: 110px;
+    padding: 10px 20px;
+    transition: all 0.5s linear;
+    min-width: 200px;
+
+    &:hover {
+        background: #0D0D0D;
+        cursor: pointer;
+    }
+
+    ${({ active }) => active && `
+        background: #0D0D0D;
+    `}
+`;
+
+export const WorkPlaceButtons = styled.div`
+    align-items: center;
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    max-width: 1200px;
+`;
+
+export const WorkPlaceHeader = styled.div`
+    color: #626262;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    width: 100%;
+`;
+
+export const WorkPlaceLogo = styled.img`
+    max-height: 120px;
+    padding: 20px 10px;
+    max-width: 100%;
+`;
+
+export const WorkPlaceTaskDescription = styled.div`
+    color: #626262;
+    font-size: 20px;
+    padding: 10px 30px;
+    width: 100%;
 `;
