@@ -95,7 +95,7 @@ function App() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
     i18n.changeLanguage('en');
-  }, []);
+  }, [i18n]);
 
   return (
     <Portfolio>
