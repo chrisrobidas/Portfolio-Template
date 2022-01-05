@@ -180,7 +180,7 @@ export const PlacesIWorkedContainer = styled.div`
     max-width: 1200px;
 `;
 
-export const PlacesIWorkedSection = styled.div`
+export const PlacesIWorkedSection = styled.section`
     align-items: center;
     background-color: #F2F2F2;
     display: flex;
@@ -301,7 +301,7 @@ export const Socials = styled.div`
     margin-bottom: 30px;
 `;
 
-export const SplittedAboutSection = styled.section`
+export const SplittedAbout = styled.div`
     align-items: center;
     display: flex;
     flex-direction: row;

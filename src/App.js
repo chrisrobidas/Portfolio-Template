@@ -39,7 +39,7 @@ import {
   Socials,
   Skill,
   SkillName,
-  SplittedAboutSection,
+  SplittedAbout,
   ThisProjectText,
   WorkPlaceButton,
   WorkPlaceButtons,
@@ -117,7 +117,7 @@ function App() {
         </HomeText>
       </HomeSection>
       <AboutSection>
-        <SplittedAboutSection data-aos="fade-up">
+        <SplittedAbout data-aos="fade-up">
           <LeftAboutSectionPart>
             <SectionTitle>
               {t('about.whoami')}
@@ -173,7 +173,7 @@ function App() {
               <CustomProgressBar now={60} label="60%" variant="info"/>
             </Skill>
           </RightAboutSectionPart>
-        </SplittedAboutSection>
+        </SplittedAbout>
       </AboutSection>
       <PlacesIWorkedSection>
         <SectionTitle data-aos="fade-up">
