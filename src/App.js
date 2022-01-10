@@ -1,9 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Aos from 'aos';
-import "./App.css";
 import "aos/dist/aos.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ParticlesConfig from './config/particlesjs-config.json';
 import { useTranslation } from "react-i18next";
 import {
   AboutSection,
@@ -47,7 +45,6 @@ import {
   WorkPlaceLogo,
   WorkPlaceTaskDescription
 } from './style.js';
-import Particles from 'react-tsparticles';
 
 function App() {
 
@@ -107,7 +104,6 @@ function App() {
         </EnglishButton>
       </ChangeLanguageButtons>
       <HomeSection>
-        <Particles params={ParticlesConfig}/>
         <HomeText>
           {t('home.hello-world')}
           <br/>
