@@ -192,6 +192,17 @@ export const PlacesIWorkedSection = styled.section`
 export const Portfolio = styled.div`
 `;
 
+export const ProfilePicture = styled.img`
+    border-radius: 50%;
+    width: 200px;
+`;
+
+export const ProfilePictureContainer = styled.div`
+    align-items: center;
+    display: flex;
+    justify-content: center;
+`;
+
 export const Project = styled.div`
     background-color: #FFFFFF;
     border: none;

@@ -23,6 +23,8 @@ import {
   PlacesIWorkedContainer,
   PlacesIWorkedSection,
   Portfolio,
+  ProfilePicture,
+  ProfilePictureContainer,
   Project,
   ProjectDescription,
   ProjectImage,
@@ -115,6 +117,9 @@ function App() {
       <AboutSection>
         <SplittedAbout data-aos="fade-up">
           <LeftAboutSectionPart>
+            <ProfilePictureContainer>
+              <ProfilePicture src='profile_square.png' alt='profile picture'/>
+            </ProfilePictureContainer>
             <SectionTitle>
               {t('about.whoami')}
             </SectionTitle>
