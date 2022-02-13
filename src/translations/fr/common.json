@@ -2,8 +2,8 @@
     "about": {
         "whoami": "WHOAMI",
         "my-name-is": "Mon nom est",
-        "my-description": "et je suis un développeur à la recherche de nouveaux défis. Je suis étudiant en informatique à l'Université de Sherbrooke. Je serai diplômé fin avril 2022.",
-        "my-interests": "Je m'intéresse aux jeux vidéo, à la synthèse d'images, au front-end, à la cybersécurité, à l'IA et à l'apprentissage automatique."
+        "my-description": ", je suis un développeur à la recherche de nouveaux défis et étudiant en informatique à l'Université de Sherbrooke. Je serai diplômé fin avril 2022.",
+        "my-interests": "Je m'intéresse aux jeux vidéo, à la synthèse d'images, à la cybersécurité, à l'IA et à l'apprentissage automatique."
     },
     "contact": {
         "contact-me": "ME CONTACTER",
@@ -18,52 +18,30 @@
         "places-ive-worked": "ENDROITS OÙ J'AI TRAVAILLÉ",
         "genetec": {
             "name": "Genetec",
-            "header": "Développeur logiciel (Stage) | Sherbrooke | Été 2021",
-            "task1": "Développer et entretenir des plugins permettant d’intégrer dans l’application Security Center de Genetec des cadenas et clefs intelligents afin de pouvoir y configurer les contrôles d’accès et monitorer leurs activités en utilisant l’API du partenaire de l’entreprise.",
-            "task2": "Plugins faits avec C#, .NET 4.8 et SQL Server.",
-            "task3": "Développement fait en équipe (Agile/Kanban)."
+            "header": "Développeur logiciel (stage) | Sherbrooke (QC) | Mai 2021 – Août 2021",
+            "task1": "Développer avec C#, .NET et WPF un plugin permettant d’utiliser dans un logiciel de surveillance de bâtiments des cadenas et clefs intelligents et d’y configurer des contrôles d’accès et monitorer leurs activités.",
+            "task2": "Écrire des tests unitaires avec les frameworks NUnit et SpecFlow.",
+            "task3": "Analyser des problématiques en équipe dans un environnement Agile Kanban."
         },
         "novom": {
             "name": "Novom Interactive",
-            "header": "Développement de produits (Stage) | Magog | Automne 2020",
-            "task1": "Développer et entretenir une application web permettant d’organiser et de faire des conférences en ligne et de parler avec les autres par webcam ou par chat.",
-            "task2": "Application web faite avec Javascript (React, NodeJS) et AWS.",
-            "task3": "Développement fait en équipe (Agile/SCRUM)."
-        },
-        "cvc": {
-            "name": "Clinique Vétérinaire de Coaticook",
-            "header": "Agent de gestion de l’information (Stage) | Coaticook | Hiver 2020",
-            "task1": "Concevoir, développer et déployer un logiciel permettant de planifier des visites de médecine préventive de vétérinaires sur des fermes et de centraliser l’information et en éviter la perte.",
-            "task2": "Logiciel fait avec C#, .NET 4.7.2 et SQL Server.",
-            "task3": "Développement fait seul."
+            "header": "Développeur Full Stack (stage) | Magog (QC) | Septembre 2020 – Décembre 2020",
+            "task1": "Implanter avec ReactJS et NodeJS de nouvelles fonctionnalités dans une application web de vidéoconférence dont un menu de configuration des périphériques d’entrée et de sortie afin de permettre à des milliers d’utilisateurs de se préparer avant leur conférence.",
+            "task2": "Écrire des tests unitaires avec le framework Jest.",
+            "task3": "Planifier des sprints en équipe dans un environnement Agile Scrum."
         },
         "nba": {
             "name": "NB Automation",
-            "header": "Programmeur C# | Granby | Été 2019",
-            "task1": "Développer et entretenir un logiciel de contrôle de qualité permettant aux utilisateurs de vérifier des critères de leur choix sur des produits fabriqués en manufacture.",
-            "task2": "Logiciel fait avec C#, .NET 4.7.2 et SQL Server.",
-            "task3": "Développement fait en équipe."
-        },
-        "corde": {
-            "name": "Cordé Électrique",
-            "header": "Programmeur C# (Stage) | Valcourt | Printemps 2019",
-            "task1": "Développer et entretenir un logiciel aidant les employés à faire des soudures et une application mobile utilisant un scanner servant à faire la gestion d’inventaire.",
-            "task2": "Logiciels fait avec C#, .NET 4.7.2, Xamarin et SQL Server.",
-            "task3": "Développement fait seul."
-        },
-        "challenger": {
-            "name": "Challenger Banque Nationale",
-            "header": "Technicien informatique | Granby | Été 2017 et Été 2018",
-            "task1": "Installer des imprimantes, téléphones IP, routeurs, commutateurs, câbles réseau et autres équipements sur le site du tournoi de tennis et dans des roulottes pour les bénévoles et les représentants de Tennis Canada.",
-            "task2": "Préparer des montages publicitaires avec Photoshop pour l’affichage sur un écran géant et entretenir un site web sur WordPress pour afficher les résultats des matchs et les matchs à venir.",
-            "task3": "Support technique."
+            "header": "Développeur Full Stack | Granby (QC) | Mai 2019 – Août 2019",
+            "task1": "Ajouter et mettre à jour des formulaires dans un logiciel CRUD en utilisant C#, .NET et WPF servant à faire du contrôle de qualité sur des produits fabriqués en manufacture.",
+            "task2": "Améliorer la conception d’une base de données SQL.",
+            "task3": "Mettre à jour et corriger des bugs afin d’améliorer la performance et stabilité."
         }
     },
     "projects": {
         "my-projects": "MES PROJETS",
-        "purrfect-escape-description": "Dans Purrfect Escape, nous jouons le rôle d'un chat désireux de sortir pour satisfaire ses instincts de chasseur. Cependant, celui-ci est prisonnier de sa maison et ses humains ne le laissent pas sortir. Pourra-il trouver moyen de s'échapper? Fait avec Unity.",
-        "worfo-description": "World of Rune Fantasy Online est un jeu MMORPG en monde ouvert. Partez à l'aventure seul ou entre amis. Recherchez, combattez, explorez, améliorez vos compétences. Jouez à votre façon et façonnez votre destin! Fait avec Unity.",
-        "chalet-description": "Level design d'un chalet. Fait avec Unity.",
+        "purrfect-escape-description": "Dans Purrfect Escape, nous jouons le rôle d'un chat désireux de sortir pour satisfaire ses instincts de chasseur. Cependant, celui-ci est prisonnier de sa maison et ses humains ne le laissent pas sortir. Pourra-il trouver moyen de s'échapper? Fait avec Unity et C#.",
+        "worfo-description": "World of Rune Fantasy Online est un jeu MMORPG en monde ouvert. Partez à l'aventure seul ou entre amis. Recherchez, combattez, explorez, améliorez vos compétences. Jouez à votre façon et façonnez votre destin! Fait avec Unity, C#, MySQL et Ink.",
         "centre-description": "Le Centre d'Entraide La Boussole est un centre d'aide aux toxicomanes, hommes battus et couples. Fait avec PHP, Laravel et MySQL.",
         "this-project": "Et enfin, ce site est un projet que j'ai moi-même fait avec React."
     }

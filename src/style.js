@@ -340,10 +340,16 @@ export const WorkPlaceButton = styled.button`
 
 export const WorkPlaceButtons = styled.div`
     align-items: center;
+    background: #1D1D1D;
     display: flex;
+    justify-content: center;
     overflow-x: auto;
     width: 100%;
     max-width: 1200px;
+
+    @media (max-width: 670px) {
+        justify-content: left;
+    }
 `;
 
 export const WorkPlaceHeader = styled.div`

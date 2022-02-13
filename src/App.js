@@ -119,7 +119,7 @@ function App() {
               {t('about.whoami')}
             </SectionTitle>
             <SectionText>
-              {t('about.my-name-is')} <b>{yourName}</b> {t('about.my-description')}
+              {t('about.my-name-is')} <b>{yourName}</b>{t('about.my-description')}
               <br />
               <br />
               {t('about.my-interests')}
@@ -183,17 +183,8 @@ function App() {
             <WorkPlaceButton active={activeWorkplace === 'novom'} onClick={() => changeWorkplace('novom')}>
               {t('places-worked.novom.name')}
             </WorkPlaceButton>
-            <WorkPlaceButton active={activeWorkplace === 'cvc'} onClick={() => changeWorkplace('cvc')}>
-              {t('places-worked.cvc.name')}
-            </WorkPlaceButton>
             <WorkPlaceButton active={activeWorkplace === 'nba'} onClick={() => changeWorkplace('nba')}>
               {t('places-worked.nba.name')}
-            </WorkPlaceButton>
-            <WorkPlaceButton active={activeWorkplace === 'corde'} onClick={() => changeWorkplace('corde')}>
-              {t('places-worked.corde.name')}
-            </WorkPlaceButton>
-            <WorkPlaceButton active={activeWorkplace === 'challenger'} onClick={() => changeWorkplace('challenger')}>
-              {t('places-worked.challenger.name')}
             </WorkPlaceButton>
           </WorkPlaceButtons>
           <WorkPlaceLogo src={activeWorkplace + "-logo.png"} alt="workplace logo"/>
@@ -240,15 +231,6 @@ function App() {
           </Project>
           <Project>
             <ProjectTitle>
-              Level Design: Chalet
-            </ProjectTitle>
-            <ProjectDescription>
-              {t('projects.chalet-description')}
-            </ProjectDescription>
-            <ProjectVideo height={(width * 9) / 16} src="https://www.youtube.com/embed/71wmsMhOk_8" allow="fullscreen;"/>
-          </Project>
-          <Project>
-            <ProjectTitle>
               Centre d'Entraide La Boussole
             </ProjectTitle>
             <ProjectDescription>
@@ -267,7 +249,7 @@ function App() {
         <ContactButton onClick={() => window.location = "mailto:" + yourEmail} data-aos="fade-up">
           {t('contact.contact-me')}
         </ContactButton>
-        <ResumeButton type="submit" onClick={() => window.open(i18n.language === 'fr' ? 'Christopher_Robidas_CV_2021_fr.pdf' : 'Christopher_Robidas_CV_2021_en.pdf')} data-aos="fade-up">
+        <ResumeButton type="submit" onClick={() => window.open(i18n.language === 'fr' ? 'Christopher_Robidas_Resume_2022_fr.pdf' : 'Christopher_Robidas_Resume_2022_en.pdf')} data-aos="fade-up">
           {t('contact.see-resume')}
         </ResumeButton>
       </ContactSection>
@@ -276,7 +258,7 @@ function App() {
           <a href="https://www.linkedin.com/in/christopher-robidas-a661241a2/">
             <LinkedinLogo src="linkedin-logo.png" alt="Linkedin logo"/>
           </a>
-          <a href="https://github.com/Master-YEET">
+          <a href="https://github.com/chrisrobidas">
             <GitHubLogo src="github-logo.png" alt="GitHub logo"/>
           </a>
         </Socials>
